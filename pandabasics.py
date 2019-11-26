@@ -1,4 +1,4 @@
-# panda basics
+# pandas basics
 import numpy
 import pandas
 

@@ -1,3 +1,5 @@
+neurodynex
+brian2
 pandas
 matplotlib
 numpy

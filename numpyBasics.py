@@ -33,4 +33,3 @@ plt.scatter(myArrayScatter1, myArrayScatter2)
 plt.xlabel("x axis")
 plt.ylabel("y axis")
 plt.show()
-
