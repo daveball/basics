@@ -38,3 +38,7 @@ print(description)
 # group by class and print  count
 class_count = dataPandas.groupby('class').size()
 print(class_count)
+
+# correlations
+correlations = dataPandas.corr(method= 'pearson')
+print(correlations)
