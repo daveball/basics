@@ -1,0 +1,25 @@
+# feature selection Univeriate data using chi square
+from pathlib import Path
+from numpy import set_printoptions
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import chi2
+from pandas import read_csv
+
+# load  data  file
+data_folder = Path("data/")
+file_to_open = data_folder / "pima-indians-diabetes.csv"
+
+names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
+dataFrame = read_csv(file_to_open, names=names)
+array = dataFrame.values
+
+# scale  data
+x = array[:, 0:8]
+y = array[:, 8]
+
+test = SelectKBest(score_func=chi2, k=4)
+fit = test.fit(x, y)
+set_printoptions(precision=3)
+print(fit.scores_)
+features = fit.transform(x)
+print(features[0:5, :])
