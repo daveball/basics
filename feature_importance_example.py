@@ -1,6 +1,6 @@
 # feature importance
 from pathlib import Path
-from numpy import set_printoptions
+
 from sklearn.ensemble import ExtraTreesClassifier
 from pandas import read_csv
 
@@ -20,5 +20,3 @@ model = ExtraTreesClassifier(n_estimators=100)
 model.fit(x, y)
 
 print(model.feature_importances_)
-
-
