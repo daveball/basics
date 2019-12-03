@@ -37,8 +37,9 @@ print(myList[1:3])    # Prints elements starting from 2nd till 3rd
 print(myList[2:])     # Prints elements starting from 3rd element
 print(tinyList * 2)   # Prints list two times
 print(myList + tinyList)  # Prints concatenated lists
-
-# Tuples
+myList.append('Dave')
+print(myList)
+# Tuples cannot be altered
 myTuple = ('abcd', 786, 2.23, 'john', 70.2)
 tinyTuple = (123, 'john')
 
@@ -68,3 +69,4 @@ thisSet = {"apple", "banana", "cherry"}
 print(thisSet)
 thisSet.add('pear')
 print(thisSet)
+
