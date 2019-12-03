@@ -1,3 +1,4 @@
+scikit-learn
 neurodynex
 brian2
 pandas
